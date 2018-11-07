@@ -10,6 +10,7 @@ import * as FormActions from '../actions/form'
 import ItemTable from '../components/Item/ItemTable.js'
 import ItemForm from '../components/Forms/ItemForm/index.js'
 
+
 class AppContainer extends Component {
     constructor(props){
         super(props);
@@ -90,7 +91,6 @@ class AppContainer extends Component {
         <div className='row' style={{display: 'flex', justifyContent:'center'}}>
             <h1 style={{textAlign:'center'}}>R-Poss</h1>
         </div>
-        <hr/>
         <div className='row'>
             {!isAdd && !edited && <button className='btn btn-primary' onClick={this.onAdd}>Add Item</button>}
             {isAdd && <React.Fragment>
@@ -103,7 +103,6 @@ class AppContainer extends Component {
                 <ItemForm onSubmit={this.onCommitEdit} onCancel={this.onCancelEdit}/>
             </React.Fragment>}
         </div>
-        <hr/>
         <div className='row' style={{display:'flex', justifyContent:'center'}}>
             <ItemTable items={items} isLoading={isLoading}
             onEdit={this.onEdit}
