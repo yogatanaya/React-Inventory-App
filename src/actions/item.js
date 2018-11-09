@@ -6,8 +6,8 @@ export function loadAllPending(){
 
 export function loadAllFullfilled(){
     const items=[
-        {id: 1, name: "Oreo", satuan:"Eceran", price:"7000"},
-        {id: 2, name: "Mie Instant", satuan:"Dus", price:"65000"}
+        {id: 1, name: "Oreo", satuan:"Eceran", price:"7000", stok:"15"},
+        {id: 2, name: "Mie Instant", satuan:"Dus", price:"65000",stok:"15"}
     ];
     return{
         type:"ITEM/LOAD_ALL_FULLFILLED",

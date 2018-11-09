@@ -35,6 +35,7 @@ class AppContainer extends Component {
             const values ={
                 name:"",
                 satuan:"",
+                stok:"",
                 price: "",
             
             };
@@ -91,7 +92,7 @@ class AppContainer extends Component {
             <h1 style={{textAlign:'center'}}>R-Poss</h1>
         </div>
         <div className='row'>
-            {!isAdd && !edited && <button className='btn btn-primary' onClick={this.onAdd}>Add Item</button>}
+            {!isAdd && !edited && <button className='btn btn-primary' onClick={this.onAdd}><i className='material-icons'>add</i></button>}
             {isAdd && <React.Fragment>
                 <ItemForm onSubmit={this.onCommitAdd} onCancel={this.onCancelAdd}/>
             </React.Fragment>}

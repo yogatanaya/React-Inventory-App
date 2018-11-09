@@ -1,8 +1,8 @@
 const initialState={
     items:[
-        {id:1, name:"Biskuit",satuan:"Dus",price:"130,000"},
-        {id:2, name:"Minyak Goreng",satuan:"Eceran",price:"55,000"},
-        {id:3, name:"Sabun",satuan:"Lusin",price:"45,000"}
+        {id:1, name:"Biskuit",satuan:"Dus",price:"130,000", stok:"15"},
+        {id:2, name:"Minyak Goreng",satuan:"Eceran",price:"55,000", stok:"15"},
+        {id:3, name:"Sabun",satuan:"Lusin",price:"45,000", stok:"15"}
     ],
     isLoading:false,
 };

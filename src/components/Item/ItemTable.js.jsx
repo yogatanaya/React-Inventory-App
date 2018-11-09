@@ -22,7 +22,8 @@ const ItemTable=(props)=>{
                     <th>No.</th>
                     <th>Nama Barang</th>
                     <th>Satuan</th>
-                    <th>Harga</th>
+                    <th>Harga Jual</th>
+                    <th>Stok</th>
                     <th>Opsi</th>
                 </tr>
             </thead>
@@ -34,10 +35,11 @@ const ItemTable=(props)=>{
                             <td>{item.name}</td>
                             <td>{item.satuan}</td>
                             <td>{item.price}</td>
+                            <td>{item.stok}</td>
                             <td>
-                                <button className='btn btn-danger' onClick={onDelete(item)}>Delete</button>
+                                <button className='btn btn-danger' onClick={onDelete(item)}><i className='material-icons'>delete</i></button>
                                 {" "}
-                                <button className='btn btn-warning' onClick={onEdit(item)}>Edit</button>
+                                <button className='btn btn-warning' onClick={onEdit(item)}><i className='material-icons'>edit</i></button>
                             </td>
                         </tr>
                     );
