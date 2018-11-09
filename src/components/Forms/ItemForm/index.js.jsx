@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import {Field, FieldArray, reduxForm} from 'redux-form'
-import PriceFieldArray from './PriceFieldArray.js'
+import {Field, reduxForm} from 'redux-form'
 
 class ItemForm extends React.Component {
   render() {
@@ -18,7 +17,13 @@ class ItemForm extends React.Component {
 
             {/* satuan */}
             <div className='form-group'>
-                <Field name='satuan' component='input' type='text' className='form-control' placeholder="Satuan..."/>
+                <Field name='satuan' component='select' type='text' className='form-control' placeholder="Satuan...">
+                    <option value="">Pilih Type Satuan</option>
+                    <option value="Sak">Sak</option>
+                    <option value="Dus">Dus</option>
+                    <option value="Lusin">Lusin</option>
+                    <option value="Eceran">Eceran</option>
+                </Field>
             </div>
 
             {/* harga */}
